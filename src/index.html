@@ -53,39 +53,42 @@
                         <!-- Question -->
                         <div class="start-question question">
                             <div class="question__texts">
-                                <p class="question__number">Question 6 of 10</p>
+                                <p class="question__number">Question <span class="num-question">6</span> of 10</p>
                                 <h2 class="question__title">Which of these color contrast ratios defines the minimum WCAG 2.1 Level AA requirement for normal text?</h2>
                                 <div class="content-range">
-                                    <input id="range" type="range" class="question__bar-back" min="1" max="10" value="6">
+                                    <input id="range" type="range" min="1" max="10" value="6">
                                 </div>
                             </div>
                             <form class="form question__options">
                                 <ul class="start__topics">
-                                    <li class="option">
-                                        <label id="icon__option" class="option-a">A</label>
-                                        <input class="btn-option start__text" type="button" value="4.5 : 1">
+                                    <li class="option option-a">
+                                        <p class="icon__option">A</p>
+                                        <p class="btn-option start__text">4.5 : 1</p>
+                                        <img class="correct" src="./assets/images/icon-correct.svg" alt="correct">
                                     </li>
-                                    <li class="option">
-                                        <label id="icon__option" class="option-b">B</label>
-                                        <input class="btn-option start__text" type="button" value="4.5 : 1">
+                                    <li class="option option-b">
+                                        <p class="icon__option">B</p>
+                                        <p class="btn-option start__text">4.5 : 1</p>
+                                        <img class="correct" src="./assets/images/icon-correct.svg" alt="correct">
                                     </li>
-                                    <li class="option">
-                                        <label id="icon__option" class="option-c">C</label>
-                                        <input class="btn-option start__text" type="button" value="4.5 : 1">
+                                    <li class="option option-c">
+                                        <p class="icon__option">C</p>
+                                        <p class="btn-option start__text">4.5 : 1</p>
+                                        <img class="correct" src="./assets/images/icon-correct.svg" alt="correct">
                                     </li>
-                                    <li class="option">
-                                        <label id="icon__option" class="option-d">D</label>
-                                        <input class="btn-option start__text" type="button" value="4.5 : 1">
-                                    </li>
-                                    <li class="option">
-                                        <button class="btn-submit" type="submit">Submit Answer</button>
+                                    <li class="option option-d">
+                                        <p class="icon__option">D</p>
+                                        <p class="btn-option start__text">4.5 : 1</p>
+                                        <img class="correct" src="./assets/images/icon-correct.svg" alt="correct">
                                     </li>
                                 </ul>
+                                <button id="btn-submit" class="btn-submit" type="submit">Submit Answer</button>
                             </form>
                         </div>
                     </section>
                 </header>
         </main>
+        <script src="./js/main.js"></script>
 
     <!-- Quiz question end -->
 
