@@ -6,10 +6,25 @@ const numQuestion = document.getElementById('num-question');
 
 const circle = document.getElementById('circle');
 const body = document.getElementById('body')
+
+function changeImgBackground() {
+    if (body.classList.contains('dark-mode')) {
+        if (window.innerWidth >= 1024) {
+            body.style.backgroundImage = 'url(../assets/images/pattern-background--dark.svg)';
+        } else if (window.innerWidth >= 768) {
+            body.style.backgroundImage = 'url(../assets/images/pattern-background-tablet-dark.svg)';
+        } else {body.style.backgroundImage = 'url(../assets/images/pattern-background-mobile-dark.svg)';}  
+        
+    }
+}
+
+window.addEventListener('load', changeImgBackground);
+
 const interruptor = document.querySelector('.switch');
 interruptor.addEventListener('click', function() {
     circle.classList.toggle('move');
     body.classList.toggle('dark-mode');
+    changeImgBackground()
 })
 
 const quiz = {
